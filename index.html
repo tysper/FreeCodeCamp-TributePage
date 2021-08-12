@@ -1,73 +1,14 @@
+<!--This is a project to train the abilities that I learned at https://www.freecodecamp.com -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>FCC: Tribute Page</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <style>
-      
-      body {
-        padding: 20px 5px 20px 5px;
-      }
-      * {
-        font-family: helvetica, arial;
-      }
-
-      #main {
-        background-color: rgb(240, 240, 240);
-        display: grid;
-        grid-template-rows: 2.5fr 10fr;
-        color: rgba(0, 0, 0, 0.83);
-        border-radius: 5px;
-      }
-
-      #header-container {
-        display: grid;
-
-        justify-items: center;
-        align-items: center;
-      }
-      
-
-      #img-div {
-        display: grid;
-        justify-items: center;
-        background-color: white;
-        grid-area: 2/1;
-        margin: 25px;
-        padding: 20px 0px 20px 0px;
-        border-radius: 5px;
-      }
-      #tribute-info {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
-        line-height: 25px;
-      }
-      #tribute-info > * {
-        grid-area: 1/2;
-        margin: 25px
-      }
-      
-      .centered {
-        text-align: center;
-      }
-      #image {
-        margin: 20px;
-      }
-
-      #content {
-        text-align: justify;
-      }
-
-      #timeline > li {
-        margin: 20px 0px 20px 0px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
-    
+    <!--Title-->
     <div id="main">
       <div id="header-container">
         <header>
@@ -78,15 +19,17 @@
         </header>
       </div>
 
+      <!--Image Container-->
       <div id="img-div">
         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" id="image"/>
-        <caption id="img-caption">
+        <figcaption id="img-caption">
           Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.
-        </caption>
+        </figcaption>
       </div>
 
+      <!--Page Content-->
       <div id="tribute-info">
-        <div id="content">
+        <main id="content">
           <h3 style="text-align: center; margin-bottom: 50px;;">Here's a time line of Dr. Bourlag's life:</h3>
 
           <ul id="timeline">
@@ -127,10 +70,17 @@
 
             -- Indian Prime Minister Manmohan Singh
           </cite>
-        </div>
+        </main>
       </div>
+      
+      <!--Footer of the page-->
+      <footer>
+        <h3 class="centered">If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
 
-        <h3 id="tribute-link" class="centered">If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
+        <!--This page does not have any copyrights I just added because I really enjoy this symbol haha-->
+        <p class="centered"><em>FreeCodeCamp &copy; 2021</em></p>
+      </footer>
     </div>
   </body>
 </html>
+<!--This is the final page, I really loved doing this, I think is the third time I am saying this, but it was really cool and I'm really excited about it :) -->

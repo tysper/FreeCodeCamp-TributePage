@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+      /* This affects the whole page */
+      body {
+        padding: 20px 5px 20px 5px;
+      }
+
+      /* Sets the font from google api */
+      * {
+        font-family: 'Gowun Dodum', sans-serif;;
+      }
+
+      /* This is where all the page is located so these attributes are set for every child element*/
+      #main {
+        background-color: rgba(231, 231, 231, 0.727);
+        display: grid;
+        grid-template-rows: 2.5fr 10fr;
+        color: rgba(0, 0, 0, 0.83);
+        border-radius: 5px;
+      }
+
+      /* I just did this to center the Title */
+      #header-container {
+        display: grid;
+        align-items: center;
+      }
+      
+      /* The goal here was to center and also let the borders and padding bigger, also i wanted to center the image. */
+      #img-div {
+        display: grid;
+        justify-items: center;
+        background-color: white;
+        grid-area: 2/1;
+        margin: 25px;
+        padding: 20px 30px 20px 30px;
+        border-radius: 5px;
+      }
+
+      /* Here I just divided the Document in 3 columns*/
+      #tribute-info {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        line-height: 25px;
+      }
+
+      /* This was made to centralize the text and still justify it later. */
+      #tribute-info > * {
+        grid-area: 1/2;
+        margin: 25px
+      }
+      
+      /* All the text that is supposed to be centralized is in this class. */
+      .centered {
+        text-align: center;
+      }
+
+      /*Just letting it cleaner and defining the max-width so it wouldn't grow bigger than the parent element. */
+      #image {
+        margin: 20px;
+        max-width: 100%;
+      }
+      
+      /* Like i said before, justify the content so it is more readable */
+      #content {
+        text-align: justify;
+      }
+
+      /* Improving readability */
+      #timeline > li {
+        margin: 20px 0px 20px 0px;
+      }
