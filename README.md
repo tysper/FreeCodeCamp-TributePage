@@ -1,2 +1,2 @@
 # FreeCodeCamp-TributePage
-I'm starting to learn the basics of HTML and CSS 
+I'm starting my very first project with the knowledge that I have.
